@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+
    <title>Survey</title>
 </head>
 
@@ -18,17 +19,17 @@
       <div class="wrapper target">
          <div class="left">
             <a href="https://www.linkedin.com/in/efe-durgut-9359b6295/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
+               <i class="fa-brands fa-linkedin"></i>
             </a>
             <a href="https://x.com/" target="_blank">
-                <i class="fa-brands fa-square-x-twitter"></i>
+               <i class="fa-brands fa-square-x-twitter"></i>
             </a>
             <a href="https://www.instagram.com" target="_blank">
-                <i class="fa-brands fa-square-instagram"></i>
+               <i class="fa-brands fa-square-instagram"></i>
 
             </a>
             <a href="https://github.com/effedx0" target="_blank">
-                <i class="fa-brands fa-square-github"></i>
+               <i class="fa-brands fa-square-github"></i>
             </a>
          </div>
          <div class="center">
@@ -36,7 +37,7 @@
             <a href="./about.html">ABOUT</a>
             <a href="./project.html">PROJECT</a>
             <a href="./login.html">FORMS</a>
-            
+
          </div>
          <div class="right">
             <span>
@@ -49,125 +50,116 @@
          </div>
       </div>
    </div>
-   <div class="logReg">
-    <img src="../public/img/gunbatimi.jpg" alt="register">
-    
-<form action="file:///C:/Users/casper/Documents/%C4%B0nternet%20Teknolojileri/deneme.html">
-<table><br>
-  <tr>
-    <th>QUESTIONS</th>
-    <th>YES</th>
-    <th>NO</th>
-    <th>IDK</th>
-  </tr>
-  
-  <tr>
-    <td>Do you like my blog ?</td>
-    <td>
-       <input type="radio" id="cvp6" name="cvp6">1
-    </td>
-    <td>
-       <input type="radio" id="cvp6" name="cvp6">2
-    </td>
-    <td>
-       <input type="radio" id="cvp6" name="cvp6">3
-    </td>
-  </tr>
-  
-  <tr>
-    <td>will you recommend my blogg to other peoples?</td>
-    <td>
-       <input type="radio" id="cvp7" name="cvp7">1
-    </td>
-    <td>
-       <input type="radio" id="cvp7" name="cvp7">2
-    </td>
-    <td>
-       <input type="radio" id="cvp7" name="cvp7">3
-    </td>
-  </tr>
-  
-  <tr>
-    <td>can you rate my blogg? yes =7- 10 no =3 - 6 idk = 0 - 2 </td>
-    <td>
-       <input type="radio" id="cvp8" name="cvp8">1
-    </td>
-    <td>
-       <input type="radio" id="cvp8" name="cvp8">2
-    </td>
-    <td>
-       <input type="radio" id="cvp8" name="cvp8">3
-    </td>
-  </tr>
-  
-  <tr>
-    <td>do you think I can upgrade my blog further ?</td>
-   <td>
-       <input type="radio" id="cvp9" name="cvp9">1
-    </td>
-    <td>
-       <input type="radio" id="cvp9" name="cvp9">2
-    </td>
-    <td>
-       <input type="radio" id="cvp9" name="cvp9">3
-    </td>
-  </tr>
-  
- <tr>
-   <td>are you interested in devoloping games ?</td>
-    <td>
-       <input type="radio" id="cvp10" name="cvp10">1
-    </td>
-    <td>
-       <input type="radio" id="cvp10" name="cvp10">2
-    </td>
-    <td>
-       <input type="radio" id="cvp10" name="cvp10">3
-    </td>
-  </tr>
-  
-  <tr>
-    <td>Are you interested in sorfware ?</td>
-    <td>
-       <input type="radio" id="cvp11" name="cvp11">1
-    </td>
-    <td>
-       <input type="radio" id="cvp11" name="cvp11">2
-    </td>
-    <td>
-       <input type="radio" id="cvp11" name="cvp11">3
-    </td>
-  </tr>
-  </tr>
- <tr>
-   <td>do you want join us for creating games ?</td>
-    <td>
-       <input type="radio" id="cvp14" name="cvp14">1
-    </td>
-    <td>
-       <input type="radio" id="cvp14" name="cvp14">2
-    </td>
-    <td>
-       <input type="radio" id="cvp14" name="cvp14">3
-    </td>
-  </tr>
 
-</table><br>
+   <form id="form" name="survey-form">
 
-<input type="submit" value="send"><br>
+      <!-- Details -->
+      <div class="form-control">
+         <label for="name" id="label-name">
+            Name
+         </label>
 
-</form>
- </div>
-     
+         <!-- Input Type Text -->
+         <input type="text" id="name" placeholder="Enter your name" />
+      </div>
 
-     
-     
- 
+      <div class="form-control">
+         <label for="email" id="label-email">
+            Email
+         </label>
+
+         <!-- Input Type Email-->
+         <input type="email" id="email" placeholder="Enter your email" />
+      </div>
+
+      <div class="form-control">
+         <label for="age" id="label-age">
+            Age
+         </label>
+
+         <!-- Input Type Text -->
+         <input type="text" id="age" placeholder="Enter your age" />
+      </div>
+
+      <div class="form-control">
+         <label for="role" id="label-role">
+            Which option best describes you?
+         </label>
+
+         <!-- Dropdown options -->
+         <select name="role" id="role">
+            <option value="student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+         </select>
+      </div>
+
+      <div class="form-control">
+         <label>
+            Would you recommend Web Development to a friend?
+         </label>
+
+         <!-- Input Type Radio Button -->
+         <label for="recommed-1">
+            <input type="radio" id="recommed-1" name="recommed">Yes</input>
+         </label>
+         <label for="recommed-2">
+            <input type="radio" id="recommed-2" name="recommed">No</input>
+         </label>
+         <label for="recommed-3">
+            <input type="radio" id="recommed-3" name="recommed">Maybe</input>
+         </label>
+      </div>
+
+      <div class="form-control">
+         <label>Languages and Frameworks known
+            <small>(Check all that apply)</small>
+         </label>
+         <!-- Input Type Checkbox -->
+         <label for="inp-1">
+            <input type="checkbox" name="inp">HTML</input></label>
+         <label for="inp-2">
+            <input type="checkbox" name="inp">CSS</input></label>
+         <label for="inp-3">
+            <input type="checkbox" name="inp">JavaScript</input></label>
+         <label for="inp-4">
+            <input type="checkbox" name="inp">React.js</input></label>
+         <label for="inp-5">
+            <input type="checkbox" name="inp">Angular</input></label>
+         <label for="inp-6">
+            <input type="checkbox" name="inp">Django</input></label>
+         <label for="inp-7">
+            <input type="checkbox" name="inp">Node.js</input></label>
+         <label for="inp-7">
+            <input type="checkbox" name="inp">Git</input></label>
+         <label for="inp-7">
+            <input type="checkbox" name="inp">Mongo DB</input></label>
+         <label for="inp-7">
+            <input type="checkbox" name="inp">Express.js</input></label>
+      </div>
+
+      <div class="form-control">
+         <label for="comment">
+            Any comments or suggestions
+         </label>
+
+         <!-- multi-line text input control -->
+         <textarea name="comment" id="comment" rows="5" placeholder="Enter your comment here"></textarea>
+      </div>
+      <!-- Multi-line Text Input Control -->
+      <button type="submit" value="submit">Submit</button>
+   </form>
+
+
+
+
+
 
 
 
    <script src="../public/js/search.js"></script>
    <script src="../public/js/scroll.js"></script>
-</body> 
+</body>
 
 </html>
