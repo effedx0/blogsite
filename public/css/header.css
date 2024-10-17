@@ -1,0 +1,66 @@
+.header {
+    margin-top: 70px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .header img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+ }
+ 
+ .header h1,
+ .header h2 {
+    position: absolute;
+ }
+ 
+ .header h1 {
+    top: 100px;
+    font-family: "Pixelify Sans", serif;
+    font-size: 6rem;
+    color: white;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(112, 111, 111, 0.699), 0px 0px 10px rgb(0, 0, 0);
+ }
+ .header h2 {
+    top: 60px;
+    font-family: "Pixelify Sans", serif;
+    font-size: 4.2rem;
+    color: black;
+    text-shadow: 0px 0px 3px rgba(160, 160, 160, 0.952), 0px 0px 6px rgba(165, 165, 165, 0.781);
+ }
+
+
+ /* Scroll animation */
+ .header {
+    transform: translateX(-30px);
+    transition: all 0.5s;
+    opacity: 0;
+ }
+ .header.active {
+    transform: translateX(0px);
+    opacity: 1;
+ }
+ 
+ .header h1,
+ .header h2 {
+    position: absolute;
+    transform: translateY(-20px);
+    transition: all 0.8s;
+    opacity: 0;
+ }
+ .header.active h1,
+ .header.active h2 {
+    position: absolute;
+    transform: translateY(0px);
+    opacity: 1;
+ }
+ 
+ .header.active h2 {
+    transition-delay: 0.3s;
+    position: absolute;
+    transform: translateY(0px);
+ 
+ }

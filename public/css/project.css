@@ -1,0 +1,61 @@
+.project {
+    flex: 9;
+    margin-bottom: 30px;
+    display: flex;
+   flex-wrap: wrap;
+    gap: 20px;  
+ }
+ 
+ .project .posts {
+   width: calc(50% - 20%);
+   border: 1px solid rgba(39, 39, 39, 0.568);
+   border-radius: 10px;
+   padding: 15px;
+   margin-bottom: 30px;
+ }
+ 
+ .project h1 {
+    font-family: 'Pacifico', cursive;
+ }
+ 
+ .project img {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    height: 200px;
+    object-fit: cover;
+ }
+ 
+ 
+ .project .authorAndDate {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+ }
+ 
+ .project .authorAndDate span:nth-child(1) {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: small;
+ }
+ .project .authorAndDate span:nth-child(2) {
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 700;
+    font-size: small;
+ }
+ 
+ /* Scroll animation */
+ 
+ .project .post {
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: all 0.5s;
+ }
+ .project .post:nth-child(2n) {
+    transition: all 0.8s;
+ }
+ .project .post.active {
+    transform: translateX(0px);
+    opacity: 1;
+ }
+ 
